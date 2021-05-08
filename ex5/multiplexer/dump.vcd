@@ -1,0 +1,41 @@
+$date
+	Sat May 08 07:22:27 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multiplexer2 $end
+$var wire 64 ! dd [63:0] $end
+$var reg 1 " s0 $end
+$var reg 64 # x0 [63:0] $end
+$var reg 64 $ y0 [63:0] $end
+$scope module s $end
+$var wire 64 % d [63:0] $end
+$var wire 1 " s $end
+$var wire 64 & x [63:0] $end
+$var wire 64 ' y [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+b1111111111111111111111111111111111111111111111111111111111111111 &
+bx %
+b0 $
+b1111111111111111111111111111111111111111111111111111111111111111 #
+x"
+bx !
+$end
+#30
+b1111111111111111111111111111111111111111111111111111111111111111 !
+b1111111111111111111111111111111111111111111111111111111111111111 %
+0"
+#66
+b0 !
+b0 %
+1"
+#72

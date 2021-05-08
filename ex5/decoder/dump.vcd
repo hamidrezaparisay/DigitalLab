@@ -1,0 +1,50 @@
+$date
+	Sat May 08 06:47:52 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module decoder2 $end
+$var wire 16 ! dd [15:0] $end
+$var reg 1 " enable0 $end
+$var reg 1 # w0 $end
+$var reg 1 $ x0 $end
+$var reg 1 % y0 $end
+$var reg 1 & z0 $end
+$scope module s $end
+$var wire 1 " enable $end
+$var wire 1 # w $end
+$var wire 1 $ x $end
+$var wire 1 % y $end
+$var wire 1 & z $end
+$var wire 16 ' d [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+x&
+x%
+x$
+x#
+x"
+bx !
+$end
+#30
+b1000000000000000 !
+b1000000000000000 '
+1"
+0#
+0&
+0%
+0$
+#66
+b1000000000000 !
+b1000000000000 '
+1#
+1&
+#72
