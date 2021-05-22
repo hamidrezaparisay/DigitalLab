@@ -1,0 +1,82 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001b9a2ebd410 .scope module, "alu_control2" "alu_control2" 2 1;
+ .timescale 0 0;
+v000001b9a2dc1490_0 .var "ALUOp", 1 0;
+v000001b9a2dc0ef0_0 .var "i", 31 0;
+v000001b9a2dc0090_0 .net "operation", 3 0, L_000001b9a2dbfe10;  1 drivers
+S_000001b9a2ebd5a0 .scope module, "s" "alu_control" 2 6, 3 1 0, S_000001b9a2ebd410;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "ALUOp";
+    .port_info 1 /INPUT 32 "i";
+    .port_info 2 /OUTPUT 4 "operation";
+L_000001b9a2d43640 .functor NOT 1, L_000001b9a2dc01d0, C4<0>, C4<0>, C4<0>;
+L_000001b9a2ebd840 .functor AND 1, L_000001b9a2dc09f0, L_000001b9a2d43640, C4<1>, C4<1>;
+L_000001b9a2eba550 .functor AND 1, L_000001b9a2ebd840, L_000001b9a2dc1710, C4<1>, C4<1>;
+L_000001b9a2eba430 .functor AND 1, L_000001b9a2eba550, L_000001b9a2dbfaf0, C4<1>, C4<1>;
+L_000001b9a2d430e0 .functor AND 1, L_000001b9a2dc04f0, L_000001b9a2dc0130, C4<1>, C4<1>;
+L_000001b9a2d6b0f0 .functor AND 1, L_000001b9a2d430e0, L_000001b9a2dc1670, C4<1>, C4<1>;
+L_000001b9a2d6b010 .functor NOT 1, L_000001b9a2d6b0f0, C4<0>, C4<0>, C4<0>;
+L_000001b9a2d6b080 .functor AND 1, L_000001b9a2dc13f0, L_000001b9a2dbfeb0, C4<1>, C4<1>;
+L_000001b9a2d6b1d0 .functor OR 1, L_000001b9a2dc0f90, L_000001b9a2d6b080, C4<0>, C4<0>;
+v000001b9a2d67ba0_0 .net "ALUOp", 1 0, v000001b9a2dc1490_0;  1 drivers
+v000001b9a2d681e0_0 .net *"_ivl_10", 0 0, L_000001b9a2d43640;  1 drivers
+v000001b9a2d67880_0 .net *"_ivl_12", 0 0, L_000001b9a2ebd840;  1 drivers
+v000001b9a2d67ce0_0 .net *"_ivl_15", 0 0, L_000001b9a2dc1710;  1 drivers
+v000001b9a2d67a60_0 .net *"_ivl_16", 0 0, L_000001b9a2eba550;  1 drivers
+v000001b9a2d68640_0 .net *"_ivl_19", 0 0, L_000001b9a2dbfaf0;  1 drivers
+L_000001b9a2dc9848 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v000001b9a2d67e20_0 .net/2s *"_ivl_2", 0 0, L_000001b9a2dc9848;  1 drivers
+v000001b9a2d68460_0 .net *"_ivl_20", 0 0, L_000001b9a2eba430;  1 drivers
+v000001b9a2d67f60_0 .net *"_ivl_25", 0 0, L_000001b9a2dc04f0;  1 drivers
+v000001b9a2d68280_0 .net *"_ivl_27", 0 0, L_000001b9a2dc0130;  1 drivers
+v000001b9a2d68500_0 .net *"_ivl_28", 0 0, L_000001b9a2d430e0;  1 drivers
+v000001b9a2d685a0_0 .net *"_ivl_31", 0 0, L_000001b9a2dc1670;  1 drivers
+v000001b9a2d67920_0 .net *"_ivl_32", 0 0, L_000001b9a2d6b0f0;  1 drivers
+v000001b9a2d679c0_0 .net *"_ivl_34", 0 0, L_000001b9a2d6b010;  1 drivers
+v000001b9a2d67b00_0 .net *"_ivl_40", 0 0, L_000001b9a2dc0f90;  1 drivers
+v000001b9a2dc1530_0 .net *"_ivl_42", 0 0, L_000001b9a2dc13f0;  1 drivers
+v000001b9a2dbff50_0 .net *"_ivl_44", 0 0, L_000001b9a2dbfeb0;  1 drivers
+v000001b9a2dc0810_0 .net *"_ivl_45", 0 0, L_000001b9a2d6b080;  1 drivers
+v000001b9a2dc1350_0 .net *"_ivl_47", 0 0, L_000001b9a2d6b1d0;  1 drivers
+v000001b9a2dc1030_0 .net *"_ivl_7", 0 0, L_000001b9a2dc09f0;  1 drivers
+v000001b9a2dbf870_0 .net *"_ivl_9", 0 0, L_000001b9a2dc01d0;  1 drivers
+v000001b9a2dc0bd0_0 .net "i", 31 0, v000001b9a2dc0ef0_0;  1 drivers
+v000001b9a2dbfd70_0 .net "operation", 3 0, L_000001b9a2dbfe10;  alias, 1 drivers
+L_000001b9a2dc09f0 .part v000001b9a2dc1490_0, 1, 1;
+L_000001b9a2dc01d0 .part v000001b9a2dc0ef0_0, 12, 1;
+L_000001b9a2dc1710 .part v000001b9a2dc0ef0_0, 13, 1;
+L_000001b9a2dbfaf0 .part v000001b9a2dc0ef0_0, 14, 1;
+L_000001b9a2dc04f0 .part v000001b9a2dc1490_0, 1, 1;
+L_000001b9a2dc0130 .part v000001b9a2dc0ef0_0, 13, 1;
+L_000001b9a2dc1670 .part v000001b9a2dc0ef0_0, 14, 1;
+L_000001b9a2dbfe10 .concat8 [ 1 1 1 1], L_000001b9a2eba430, L_000001b9a2d6b010, L_000001b9a2d6b1d0, L_000001b9a2dc9848;
+L_000001b9a2dc0f90 .part v000001b9a2dc1490_0, 0, 1;
+L_000001b9a2dc13f0 .part v000001b9a2dc1490_0, 1, 1;
+L_000001b9a2dbfeb0 .part v000001b9a2dc0ef0_0, 30, 1;
+    .scope S_000001b9a2ebd410;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001b9a2ebd410 {0 0 0};
+    %delay 30, 0;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000001b9a2dc0ef0_0, 0, 32;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v000001b9a2dc1490_0, 0, 2;
+    %delay 10, 0;
+    %vpi_call 2 15 "$display", "Instruction=%b\012ALUOp[1]=%b\012ALUOp[0]=%b\012Operation=%b\012", v000001b9a2dc0ef0_0, &PV<v000001b9a2dc1490_0, 1, 1>, &PV<v000001b9a2dc1490_0, 0, 1>, v000001b9a2dc0090_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "alu_control_testbench.v";
+    "alu_control.v";

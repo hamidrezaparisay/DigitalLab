@@ -1,0 +1,37 @@
+$date
+	Sat May 22 04:31:27 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_control2 $end
+$var wire 4 ! operation [3:0] $end
+$var reg 2 " ALUOp [1:0] $end
+$var reg 32 # i [31:0] $end
+$scope module s $end
+$var wire 2 $ ALUOp [1:0] $end
+$var wire 32 % i [31:0] $end
+$var wire 4 & operation [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0xxx &
+bx %
+bx $
+bx #
+bx "
+b0xxx !
+$end
+#30
+b10 !
+b10 &
+b10 "
+b10 $
+b0 #
+b0 %
+#40
