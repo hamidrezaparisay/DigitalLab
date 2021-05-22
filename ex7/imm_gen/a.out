@@ -1,0 +1,60 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000219a50a5a40 .scope module, "imm_gen2" "imm_gen2" 2 1;
+ .timescale 0 0;
+v00000219a51ab1c0_0 .var "i", 31 0;
+v00000219a51ab260_0 .net "result", 63 0, L_00000219a50a3850;  1 drivers
+S_00000219a50a5bd0 .scope module, "s" "imm_gen" 2 7, 3 1 0, S_00000219a50a5a40;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "i";
+    .port_info 1 /OUTPUT 64 "result";
+v00000219a50a5d60_0 .net *"_ivl_1", 0 0, L_00000219a51ab300;  1 drivers
+v00000219a50730e0_0 .net *"_ivl_2", 51 0, L_00000219a51ab3a0;  1 drivers
+v00000219a51aca60_0 .net *"_ivl_5", 11 0, L_00000219a51ab5f0;  1 drivers
+v00000219a50a5e00_0 .net "i", 31 0, v00000219a51ab1c0_0;  1 drivers
+v00000219a51ab120_0 .net "result", 63 0, L_00000219a50a3850;  alias, 1 drivers
+L_00000219a51ab300 .part v00000219a51ab1c0_0, 31, 1;
+LS_00000219a51ab3a0_0_0 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_4 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_8 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_12 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_16 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_20 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_24 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_28 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_32 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_36 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_40 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_44 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_0_48 .concat [ 1 1 1 1], L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300, L_00000219a51ab300;
+LS_00000219a51ab3a0_1_0 .concat [ 4 4 4 4], LS_00000219a51ab3a0_0_0, LS_00000219a51ab3a0_0_4, LS_00000219a51ab3a0_0_8, LS_00000219a51ab3a0_0_12;
+LS_00000219a51ab3a0_1_4 .concat [ 4 4 4 4], LS_00000219a51ab3a0_0_16, LS_00000219a51ab3a0_0_20, LS_00000219a51ab3a0_0_24, LS_00000219a51ab3a0_0_28;
+LS_00000219a51ab3a0_1_8 .concat [ 4 4 4 4], LS_00000219a51ab3a0_0_32, LS_00000219a51ab3a0_0_36, LS_00000219a51ab3a0_0_40, LS_00000219a51ab3a0_0_44;
+LS_00000219a51ab3a0_1_12 .concat [ 4 0 0 0], LS_00000219a51ab3a0_0_48;
+L_00000219a51ab3a0 .concat [ 16 16 16 4], LS_00000219a51ab3a0_1_0, LS_00000219a51ab3a0_1_4, LS_00000219a51ab3a0_1_8, LS_00000219a51ab3a0_1_12;
+L_00000219a51ab5f0 .part v00000219a51ab1c0_0, 20, 12;
+L_00000219a50a3850 .concat [ 12 52 0 0], L_00000219a51ab5f0, L_00000219a51ab3a0;
+    .scope S_00000219a50a5a40;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000219a50a5a40 {0 0 0};
+    %delay 30, 0;
+    %pushi/vec4 2147483648, 0, 32;
+    %store/vec4 v00000219a51ab1c0_0, 0, 32;
+    %delay 10, 0;
+    %vpi_call 2 15 "$display", "Instruction=%b\01264-bit imm=%b\012", v00000219a51ab1c0_0, v00000219a51ab260_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "imm_gen_testbench.v";
+    "imm_gen.v";

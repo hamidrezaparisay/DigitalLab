@@ -1,0 +1,95 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001d66f1ecfc0 .scope module, "control2" "control2" 2 1;
+ .timescale 0 0;
+v000001d66f246ed0_0 .net "ALUOp", 1 0, L_000001d66f246c50;  1 drivers
+v000001d66f248050_0 .net "ALUSrc", 0 0, L_000001d66f1c2df0;  1 drivers
+v000001d66f246a70_0 .net "Branch", 0 0, L_000001d66f246e30;  1 drivers
+v000001d66f2478d0_0 .net "MemRead", 0 0, L_000001d66f1c2fb0;  1 drivers
+v000001d66f2473d0_0 .net "MemWrite", 0 0, L_000001d66f1f4bb0;  1 drivers
+v000001d66f246d90_0 .net "MemtoReg", 0 0, L_000001d66f1c2e60;  1 drivers
+v000001d66f246890_0 .net "RegWrite", 0 0, L_000001d66f1c2f40;  1 drivers
+v000001d66f247dd0_0 .var "i", 6 0;
+S_000001d66f1ed150 .scope module, "s" "control" 2 7, 3 1 0, S_000001d66f1ecfc0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 7 "i";
+    .port_info 1 /OUTPUT 1 "ALUSrc";
+    .port_info 2 /OUTPUT 1 "MemtoReg";
+    .port_info 3 /OUTPUT 1 "RegWrite";
+    .port_info 4 /OUTPUT 1 "MemRead";
+    .port_info 5 /OUTPUT 1 "MemWrite";
+    .port_info 6 /OUTPUT 1 "Branch";
+    .port_info 7 /OUTPUT 2 "ALUOp";
+L_000001d66f1ed2e0 .functor NOT 1, L_000001d66f2482d0, C4<0>, C4<0>, C4<0>;
+L_000001d66f1ae780 .functor NOT 1, L_000001d66f247650, C4<0>, C4<0>, C4<0>;
+L_000001d66f1c2df0 .functor AND 1, L_000001d66f1ed2e0, L_000001d66f1ae780, C4<1>, C4<1>;
+L_000001d66f1c2e60 .functor NOT 1, L_000001d66f247970, C4<0>, C4<0>, C4<0>;
+L_000001d66f1c2ed0 .functor XOR 1, L_000001d66f247b50, L_000001d66f247bf0, C4<0>, C4<0>;
+L_000001d66f1c2f40 .functor NOT 1, L_000001d66f1c2ed0, C4<0>, C4<0>, C4<0>;
+L_000001d66f1c2fb0 .functor NOT 1, L_000001d66f2480f0, C4<0>, C4<0>, C4<0>;
+L_000001d66f1f47c0 .functor NOT 1, L_000001d66f246cf0, C4<0>, C4<0>, C4<0>;
+L_000001d66f1f4c20 .functor AND 1, L_000001d66f1f47c0, L_000001d66f248370, C4<1>, C4<1>;
+L_000001d66f1f4a60 .functor NOT 1, L_000001d66f247e70, C4<0>, C4<0>, C4<0>;
+L_000001d66f1f4bb0 .functor AND 1, L_000001d66f1f4c20, L_000001d66f1f4a60, C4<1>, C4<1>;
+v000001d66f1e7030_0 .net "ALUOp", 1 0, L_000001d66f246c50;  alias, 1 drivers
+v000001d66f1e70d0_0 .net "ALUSrc", 0 0, L_000001d66f1c2df0;  alias, 1 drivers
+v000001d66f1e6e50_0 .net "Branch", 0 0, L_000001d66f246e30;  alias, 1 drivers
+v000001d66f1e7170_0 .net "MemRead", 0 0, L_000001d66f1c2fb0;  alias, 1 drivers
+v000001d66f1e78f0_0 .net "MemWrite", 0 0, L_000001d66f1f4bb0;  alias, 1 drivers
+v000001d66f1e7350_0 .net "MemtoReg", 0 0, L_000001d66f1c2e60;  alias, 1 drivers
+v000001d66f1e7cb0_0 .net "RegWrite", 0 0, L_000001d66f1c2f40;  alias, 1 drivers
+v000001d66f1e73f0_0 .net *"_ivl_1", 0 0, L_000001d66f2482d0;  1 drivers
+v000001d66f1e7530_0 .net *"_ivl_11", 0 0, L_000001d66f247970;  1 drivers
+v000001d66f1e75d0_0 .net *"_ivl_15", 0 0, L_000001d66f247b50;  1 drivers
+v000001d66f1e7670_0 .net *"_ivl_17", 0 0, L_000001d66f247bf0;  1 drivers
+v000001d66f248690_0 .net *"_ivl_18", 0 0, L_000001d66f1c2ed0;  1 drivers
+v000001d66f247330_0 .net *"_ivl_2", 0 0, L_000001d66f1ed2e0;  1 drivers
+v000001d66f246b10_0 .net *"_ivl_23", 0 0, L_000001d66f2480f0;  1 drivers
+v000001d66f248730_0 .net *"_ivl_27", 0 0, L_000001d66f246cf0;  1 drivers
+v000001d66f247830_0 .net *"_ivl_28", 0 0, L_000001d66f1f47c0;  1 drivers
+v000001d66f246f70_0 .net *"_ivl_31", 0 0, L_000001d66f248370;  1 drivers
+v000001d66f2485f0_0 .net *"_ivl_32", 0 0, L_000001d66f1f4c20;  1 drivers
+v000001d66f248410_0 .net *"_ivl_35", 0 0, L_000001d66f247e70;  1 drivers
+v000001d66f247790_0 .net *"_ivl_36", 0 0, L_000001d66f1f4a60;  1 drivers
+v000001d66f2476f0_0 .net *"_ivl_45", 0 0, L_000001d66f2484b0;  1 drivers
+v000001d66f2469d0_0 .net *"_ivl_5", 0 0, L_000001d66f247650;  1 drivers
+v000001d66f246bb0_0 .net *"_ivl_50", 0 0, L_000001d66f247150;  1 drivers
+v000001d66f247d30_0 .net *"_ivl_6", 0 0, L_000001d66f1ae780;  1 drivers
+v000001d66f247010_0 .net "i", 6 0, v000001d66f247dd0_0;  1 drivers
+L_000001d66f2482d0 .part v000001d66f247dd0_0, 4, 1;
+L_000001d66f247650 .part v000001d66f247dd0_0, 6, 1;
+L_000001d66f247970 .part v000001d66f247dd0_0, 4, 1;
+L_000001d66f247b50 .part v000001d66f247dd0_0, 5, 1;
+L_000001d66f247bf0 .part v000001d66f247dd0_0, 4, 1;
+L_000001d66f2480f0 .part v000001d66f247dd0_0, 5, 1;
+L_000001d66f246cf0 .part v000001d66f247dd0_0, 4, 1;
+L_000001d66f248370 .part v000001d66f247dd0_0, 5, 1;
+L_000001d66f247e70 .part v000001d66f247dd0_0, 6, 1;
+L_000001d66f246e30 .part v000001d66f247dd0_0, 6, 1;
+L_000001d66f2484b0 .part v000001d66f247dd0_0, 6, 1;
+L_000001d66f246c50 .concat8 [ 1 1 0 0], L_000001d66f2484b0, L_000001d66f247150;
+L_000001d66f247150 .part v000001d66f247dd0_0, 4, 1;
+    .scope S_000001d66f1ecfc0;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001d66f1ecfc0 {0 0 0};
+    %delay 30, 0;
+    %pushi/vec4 51, 0, 7;
+    %store/vec4 v000001d66f247dd0_0, 0, 7;
+    %delay 10, 0;
+    %vpi_call 2 15 "$display", "Instruction[0 to 6]=%b\012ALUSrc=%b\012MemtoReg=%b\012RegWrite=%b\012MemRead=%b\012MemtoReg=%b\012Branch=%b\012ALUOp1=%b\012ALUOp0=%b\012", v000001d66f247dd0_0, v000001d66f248050_0, v000001d66f246d90_0, v000001d66f246890_0, v000001d66f2478d0_0, v000001d66f2473d0_0, v000001d66f246a70_0, &PV<v000001d66f246ed0_0, 1, 1>, &PV<v000001d66f246ed0_0, 0, 1> {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "control_testbench.v";
+    "control.v";

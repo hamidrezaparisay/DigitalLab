@@ -1,0 +1,31 @@
+$date
+	Sat May 22 04:58:45 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module imm_gen2 $end
+$var wire 64 ! result [63:0] $end
+$var reg 32 " i [31:0] $end
+$scope module s $end
+$var wire 32 # i [31:0] $end
+$var wire 64 $ result [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#30
+b1111111111111111111111111111111111111111111111111111100000000000 !
+b1111111111111111111111111111111111111111111111111111100000000000 $
+b10000000000000000000000000000000 "
+b10000000000000000000000000000000 #
+#40
