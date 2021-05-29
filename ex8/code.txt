@@ -1,0 +1,15 @@
+program saves result in x12 every step and increase x11 by 1.
+program ends when x11==x10 and it saves the result in memory.
+this simulation doesnt support BNE instruction.so we use tow beq.
+(the scheme in the book doesnt support this and we are based from that)
+
+0:addi x10,x0,20  ->000000010100 00000 000 01010 0010011
+4:addi x11,x0,1   ->000000000001 00000 000 01011 0010011
+8:addi x12,x0,0   ->000000000000 00000 000 01100 0010011
+
+12:beq x11,x10,4   ->0000000 01010 01011 000 01000 1100011
+16:add x12,x12,x11 ->0000000 01011 01100 000 01100 0110011
+20:addi x11,x11,1  ->000000000001 01011 000 01011 0010011
+24:beq x0,x0,-3    ->1111111 00000 00000 000 11011 1100011
+28:sd x12,0(x0)    ->0000000 01100 00000 011 00000 0100011
+
